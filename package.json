@@ -7,6 +7,12 @@
     "preview": "nuxt preview"
   },
   "devDependencies": {
-    "nuxt": "3.0.0-rc.3"
+    "nuxt": "3.0.0-rc.3",
+    "sass": "^1.52.0",
+    "sass-loader": "^13.0.0"
+  },
+  "dependencies": {
+    "apexcharts": "^3.35.2",
+    "vue3-apexcharts": "^1.4.1"
   }
 }
