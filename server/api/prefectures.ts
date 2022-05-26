@@ -11,11 +11,13 @@ export type TResponsePrefecture = {
 };
 
 export default async (req: IncomingMessage, res: ServerResponse) => {
+  const ctx = useRuntimeConfig();
+
   const response: TResponsePrefecture = await $fetch(
     "https://opendata.resas-portal.go.jp/api/v1/prefectures",
     {
       headers: {
-        "X-Api-Key": "xkQnzVoWWXsE0d2ubcIjpBIAHQbx3aJJ27HqxyjS",
+        "X-Api-Key": ctx.xApiKey,
       },
     }
   );

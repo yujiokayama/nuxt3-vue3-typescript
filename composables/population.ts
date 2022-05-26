@@ -1,7 +1,5 @@
 import type { Ref } from "vue";
 
-const config = useRuntimeConfig();
-
 type TPopulationComposition = {
   message: string | null;
   result: {
@@ -27,7 +25,7 @@ const fetchPopulation = (populationData: Ref<TPopulationData[]>) => {
       `https://opendata.resas-portal.go.jp/api/v1/population/composition/perYear?cityCode=-&prefCode=${prefCode}`,
       {
         headers: {
-          "X-Api-Key": config.X_API_KEY,
+          "X-Api-Key": "xkQnzVoWWXsE0d2ubcIjpBIAHQbx3aJJ27HqxyjS",
         },
       }
     );
